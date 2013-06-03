@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ft>
+    <response>
+        <client device="" appName="" clientId="123" appVersion=""/>
+        <responseType>api_get_route</responseType>
+        <responseTime>2013-06-03 18:05:47</responseTime>
+        <route id="276181">
+            <request status="trips" requestId="1" sessionId="WWW052699218109"/>
+            <locationFrom status="identified">
+                <location name="60200355" title="Freyenthurmgasse" municipality="Wien" type="stop" listIndex=""
+                          coordName="wgs84" wgs84Lat="48.20562" wgs84Lon="16.25665" coordX="" coordY="" distanceMeter=""
+                          durationMinutes="" relatedLines=""/>
+            </locationFrom>
+            <locationTo status="identified">
+                <location name="60200560" title="Hütteldorf" municipality="Wien" type="stop" listIndex=""
+                          coordName="wgs84" wgs84Lat="48.19733" wgs84Lon="16.26121" coordX="" coordY="" distanceMeter=""
+                          durationMinutes="" relatedLines=""/>
+            </locationTo>
+            <trips count="7">
+                <trip modality="pt"
+                      description="first"
+                      durationMinutes="4"
+                      distanceMeter=""
+                        >
+                    <timePlanned>
+                        <time start="2013-06-03 04:53" end="2013-06-03 04:57"/>
+                    </timePlanned>
+                    <segments count="1">
+                        <segment durationMinutes="4" distanceMeter="954" type="ptBusCity" realtimeSupported="0">
+                            <locationFrom>
+                                <location name="60200355" title="Freyenthurmgasse" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.20577" wgs84Lon="16.25648"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationFrom>
+                            <locationTo>
+                                <location name="60200560" title="Hütteldorf S+U" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.19779" wgs84Lon="16.26121"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationTo>
+                            <timePlanned>
+                                <time start="2013-06-03 04:53" end="2013-06-03 04:57"/>
+                            </timePlanned>
+                            <vehicle type="ptBusCity" name="52A" towards="Hütteldorf S+U" direction="R"/>
+                            <pathPolygon type="segmentPath" coordName="wgs84"
+                                         coordinates="|48.20579,16.25654|48.20572,16.25659|48.20548,16.25676|48.20530,16.25687|48.20400,16.25725|48.20378,16.25731|48.20352,16.25737|48.20329,16.25736|48.20296,16.25731|48.20250,16.25725|48.20244,16.25724|48.20220,16.25719|48.20220,16.25719|48.20215,16.25719|48.20210,16.25717|48.20201,16.25713|48.20175,16.25702|48.20159,16.25695|48.20140,16.25683|48.20093,16.25643|48.20068,16.25620|48.20029,16.25577|48.20021,16.25567|48.20018,16.25565|48.19992,16.25537|48.19973,16.25516|48.19937,16.25585|48.19893,16.25677|48.19874,16.25721|48.19841,16.25822|48.19828,16.25865|48.19818,16.25908|48.19805,16.25979|48.19802,16.25999|48.19801,16.26007|48.19801,16.26015|48.19802,16.26025|48.19803,16.26031|48.19806,16.26037|48.19814,16.26052|48.19801,16.26058|48.19796,16.26064|48.19790,16.26072|48.19789,16.26092|48.19783,16.26118|48.19782,16.26122|"/>
+                        </segment>
+                    </segments>
+                </trip>
+                <trip modality="pt"
+                      description="normal"
+                      durationMinutes="4"
+                      distanceMeter=""
+                        >
+                    <timePlanned>
+                        <time start="2013-06-03 14:41" end="2013-06-03 14:45"/>
+                    </timePlanned>
+                    <segments count="1">
+                        <segment durationMinutes="4" distanceMeter="954" type="ptBusCity" realtimeSupported="0">
+                            <locationFrom>
+                                <location name="60200355" title="Freyenthurmgasse" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.20577" wgs84Lon="16.25648"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationFrom>
+                            <locationTo>
+                                <location name="60200560" title="Hütteldorf S+U" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.19779" wgs84Lon="16.26121"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationTo>
+                            <timePlanned>
+                                <time start="2013-06-03 14:41" end="2013-06-03 14:45"/>
+                            </timePlanned>
+                            <vehicle type="ptBusCity" name="52B" towards="Hütteldorf S+U" direction="R"/>
+                            <pathPolygon type="segmentPath" coordName="wgs84"
+                                         coordinates="|48.20579,16.25654|48.20572,16.25659|48.20548,16.25676|48.20530,16.25687|48.20400,16.25725|48.20378,16.25731|48.20352,16.25737|48.20329,16.25736|48.20296,16.25731|48.20250,16.25725|48.20244,16.25724|48.20220,16.25719|48.20220,16.25719|48.20215,16.25719|48.20210,16.25717|48.20201,16.25713|48.20175,16.25702|48.20159,16.25695|48.20140,16.25683|48.20093,16.25643|48.20068,16.25620|48.20029,16.25577|48.20021,16.25567|48.20018,16.25565|48.19992,16.25537|48.19973,16.25516|48.19937,16.25585|48.19893,16.25677|48.19874,16.25721|48.19841,16.25822|48.19828,16.25865|48.19818,16.25908|48.19805,16.25979|48.19802,16.25999|48.19801,16.26007|48.19801,16.26015|48.19802,16.26025|48.19803,16.26031|48.19806,16.26037|48.19814,16.26052|48.19801,16.26058|48.19796,16.26064|48.19790,16.26072|48.19789,16.26092|48.19783,16.26118|48.19782,16.26122|"/>
+                        </segment>
+                    </segments>
+                </trip>
+                <trip modality="pt"
+                      description="normal"
+                      durationMinutes="4"
+                      distanceMeter=""
+                        >
+                    <timePlanned>
+                        <time start="2013-06-03 14:53" end="2013-06-03 14:57"/>
+                    </timePlanned>
+                    <segments count="1">
+                        <segment durationMinutes="4" distanceMeter="954" type="ptBusCity" realtimeSupported="0">
+                            <locationFrom>
+                                <location name="60200355" title="Freyenthurmgasse" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.20577" wgs84Lon="16.25648"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationFrom>
+                            <locationTo>
+                                <location name="60200560" title="Hütteldorf S+U" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.19779" wgs84Lon="16.26121"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationTo>
+                            <timePlanned>
+                                <time start="2013-06-03 14:53" end="2013-06-03 14:57"/>
+                            </timePlanned>
+                            <vehicle type="ptBusCity" name="52A" towards="Hütteldorf S+U" direction="R"/>
+                            <pathPolygon type="segmentPath" coordName="wgs84"
+                                         coordinates="|48.20579,16.25654|48.20572,16.25659|48.20548,16.25676|48.20530,16.25687|48.20400,16.25725|48.20378,16.25731|48.20352,16.25737|48.20329,16.25736|48.20296,16.25731|48.20250,16.25725|48.20244,16.25724|48.20220,16.25719|48.20220,16.25719|48.20215,16.25719|48.20210,16.25717|48.20201,16.25713|48.20175,16.25702|48.20159,16.25695|48.20140,16.25683|48.20093,16.25643|48.20068,16.25620|48.20029,16.25577|48.20021,16.25567|48.20018,16.25565|48.19992,16.25537|48.19973,16.25516|48.19937,16.25585|48.19893,16.25677|48.19874,16.25721|48.19841,16.25822|48.19828,16.25865|48.19818,16.25908|48.19805,16.25979|48.19802,16.25999|48.19801,16.26007|48.19801,16.26015|48.19802,16.26025|48.19803,16.26031|48.19806,16.26037|48.19814,16.26052|48.19801,16.26058|48.19796,16.26064|48.19790,16.26072|48.19789,16.26092|48.19783,16.26118|48.19782,16.26122|"/>
+                        </segment>
+                    </segments>
+                </trip>
+                <trip modality="pt"
+                      description="normal"
+                      durationMinutes="4"
+                      distanceMeter=""
+                        >
+                    <timePlanned>
+                        <time start="2013-06-03 15:06" end="2013-06-03 15:10"/>
+                    </timePlanned>
+                    <segments count="1">
+                        <segment durationMinutes="4" distanceMeter="954" type="ptBusCity" realtimeSupported="0">
+                            <locationFrom>
+                                <location name="60200355" title="Freyenthurmgasse" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.20577" wgs84Lon="16.25648"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationFrom>
+                            <locationTo>
+                                <location name="60200560" title="Hütteldorf S+U" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.19779" wgs84Lon="16.26121"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationTo>
+                            <timePlanned>
+                                <time start="2013-06-03 15:06" end="2013-06-03 15:10"/>
+                            </timePlanned>
+                            <vehicle type="ptBusCity" name="52B" towards="Hütteldorf S+U" direction="R"/>
+                            <pathPolygon type="segmentPath" coordName="wgs84"
+                                         coordinates="|48.20579,16.25654|48.20572,16.25659|48.20548,16.25676|48.20530,16.25687|48.20400,16.25725|48.20378,16.25731|48.20352,16.25737|48.20329,16.25736|48.20296,16.25731|48.20250,16.25725|48.20244,16.25724|48.20220,16.25719|48.20220,16.25719|48.20215,16.25719|48.20210,16.25717|48.20201,16.25713|48.20175,16.25702|48.20159,16.25695|48.20140,16.25683|48.20093,16.25643|48.20068,16.25620|48.20029,16.25577|48.20021,16.25567|48.20018,16.25565|48.19992,16.25537|48.19973,16.25516|48.19937,16.25585|48.19893,16.25677|48.19874,16.25721|48.19841,16.25822|48.19828,16.25865|48.19818,16.25908|48.19805,16.25979|48.19802,16.25999|48.19801,16.26007|48.19801,16.26015|48.19802,16.26025|48.19803,16.26031|48.19806,16.26037|48.19814,16.26052|48.19801,16.26058|48.19796,16.26064|48.19790,16.26072|48.19789,16.26092|48.19783,16.26118|48.19782,16.26122|"/>
+                        </segment>
+                    </segments>
+                </trip>
+                <trip modality="pt"
+                      description="normal"
+                      durationMinutes="4"
+                      distanceMeter=""
+                        >
+                    <timePlanned>
+                        <time start="2013-06-03 15:13" end="2013-06-03 15:17"/>
+                    </timePlanned>
+                    <segments count="1">
+                        <segment durationMinutes="4" distanceMeter="954" type="ptBusCity" realtimeSupported="0">
+                            <locationFrom>
+                                <location name="60200355" title="Freyenthurmgasse" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.20577" wgs84Lon="16.25648"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationFrom>
+                            <locationTo>
+                                <location name="60200560" title="Hütteldorf S+U" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.19779" wgs84Lon="16.26121"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationTo>
+                            <timePlanned>
+                                <time start="2013-06-03 15:13" end="2013-06-03 15:17"/>
+                            </timePlanned>
+                            <vehicle type="ptBusCity" name="52A" towards="Hütteldorf S+U" direction="R"/>
+                            <pathPolygon type="segmentPath" coordName="wgs84"
+                                         coordinates="|48.20579,16.25654|48.20572,16.25659|48.20548,16.25676|48.20530,16.25687|48.20400,16.25725|48.20378,16.25731|48.20352,16.25737|48.20329,16.25736|48.20296,16.25731|48.20250,16.25725|48.20244,16.25724|48.20220,16.25719|48.20220,16.25719|48.20215,16.25719|48.20210,16.25717|48.20201,16.25713|48.20175,16.25702|48.20159,16.25695|48.20140,16.25683|48.20093,16.25643|48.20068,16.25620|48.20029,16.25577|48.20021,16.25567|48.20018,16.25565|48.19992,16.25537|48.19973,16.25516|48.19937,16.25585|48.19893,16.25677|48.19874,16.25721|48.19841,16.25822|48.19828,16.25865|48.19818,16.25908|48.19805,16.25979|48.19802,16.25999|48.19801,16.26007|48.19801,16.26015|48.19802,16.26025|48.19803,16.26031|48.19806,16.26037|48.19814,16.26052|48.19801,16.26058|48.19796,16.26064|48.19790,16.26072|48.19789,16.26092|48.19783,16.26118|48.19782,16.26122|"/>
+                        </segment>
+                    </segments>
+                </trip>
+                <trip modality="pt"
+                      description="last"
+                      durationMinutes="4"
+                      distanceMeter=""
+                        >
+                    <timePlanned>
+                        <time start="2013-06-04 00:23" end="2013-06-04 00:27"/>
+                    </timePlanned>
+                    <segments count="1">
+                        <segment durationMinutes="4" distanceMeter="954" type="ptBusCity" realtimeSupported="0">
+                            <locationFrom>
+                                <location name="60200355" title="Freyenthurmgasse" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.20577" wgs84Lon="16.25648"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationFrom>
+                            <locationTo>
+                                <location name="60200560" title="Hütteldorf S+U" municipality="Wien" type="stop"
+                                          listIndex="" coordName="wgs84" wgs84Lat="48.19779" wgs84Lon="16.26121"
+                                          coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationTo>
+                            <timePlanned>
+                                <time start="2013-06-04 00:23" end="2013-06-04 00:27"/>
+                            </timePlanned>
+                            <vehicle type="ptBusCity" name="52A" towards="Hütteldorf S+U" direction="R"/>
+                            <pathPolygon type="segmentPath" coordName="wgs84"
+                                         coordinates="|48.20579,16.25654|48.20572,16.25659|48.20548,16.25676|48.20530,16.25687|48.20400,16.25725|48.20378,16.25731|48.20352,16.25737|48.20329,16.25736|48.20296,16.25731|48.20250,16.25725|48.20244,16.25724|48.20220,16.25719|48.20220,16.25719|48.20215,16.25719|48.20210,16.25717|48.20201,16.25713|48.20175,16.25702|48.20159,16.25695|48.20140,16.25683|48.20093,16.25643|48.20068,16.25620|48.20029,16.25577|48.20021,16.25567|48.20018,16.25565|48.19992,16.25537|48.19973,16.25516|48.19937,16.25585|48.19893,16.25677|48.19874,16.25721|48.19841,16.25822|48.19828,16.25865|48.19818,16.25908|48.19805,16.25979|48.19802,16.25999|48.19801,16.26007|48.19801,16.26015|48.19802,16.26025|48.19803,16.26031|48.19806,16.26037|48.19814,16.26052|48.19801,16.26058|48.19796,16.26064|48.19790,16.26072|48.19789,16.26092|48.19783,16.26118|48.19782,16.26122|"/>
+                        </segment>
+                    </segments>
+                </trip>
+                <trip modality="walk"
+                      description="normal"
+                      durationMinutes="17"
+                      distanceMeter="1097"
+                        >
+                    <timePlanned>
+                        <time start="2013-06-03 14:41" end="2013-06-03 14:58"/>
+                    </timePlanned>
+                    <segments count="1">
+                        <segment durationMinutes="17" distanceMeter="1097" type="walk" realtimeSupported="0">
+                            <locationFrom>
+                                <location name="Wien, Freyenthurmgasse" title="Wien, Freyenthurmgasse"
+                                          municipality="Wien" type="address" listIndex="" coordName="wgs84"
+                                          wgs84Lat="48.20562" wgs84Lon="16.25665" coordX="" coordY="" distanceMeter=""
+                                          durationMinutes=""/>
+                            </locationFrom>
+                            <locationTo>
+                                <location name="Wien, Hütteldorf" title="Wien, Hütteldorf" municipality="Wien"
+                                          type="address" listIndex="" coordName="wgs84" wgs84Lat="48.19782"
+                                          wgs84Lon="16.26104" coordX="" coordY="" distanceMeter="" durationMinutes=""/>
+                            </locationTo>
+                            <timePlanned>
+                                <time start="2013-06-03 14:41" end="2013-06-03 14:58"/>
+                            </timePlanned>
+                            <vehicle type="walk" name="walk" towards="" direction=""/>
+                            <pathPolygon type="segmentPath" coordName="wgs84"
+                                         coordinates="|48.20562,16.25665|48.20548,16.25676|48.20530,16.25687|48.20400,16.25725|48.20378,16.25731|48.20352,16.25737|48.20329,16.25736|48.20296,16.25731|48.20250,16.25725|48.20244,16.25724|48.20215,16.25719|48.20210,16.25717|48.20201,16.25713|48.20175,16.25702|48.20159,16.25695|48.20140,16.25683|48.20130,16.25699|48.20115,16.25720|48.20095,16.25747|48.20081,16.25763|48.20043,16.25801|48.19987,16.25856|48.19980,16.25861|48.19973,16.25862|48.19964,16.25852|48.19919,16.25787|48.19826,16.25912|48.19818,16.25908|48.19805,16.25979|48.19802,16.25999|48.19800,16.25999|48.19797,16.26000|48.19796,16.26003|48.19794,16.26012|48.19792,16.26041|48.19790,16.26072|48.19789,16.26092|48.19785,16.26106|"/>
+                        </segment>
+                    </segments>
+                </trip>
+            </trips>
+        </route>
+        <trafficInfos/>
+        <message messageCode="1">ok</message>
+    </response>
+</ft>
