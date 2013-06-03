@@ -1,4 +1,4 @@
-package com.example.myTimeTable;
+package eu.lucidcode.myBusSchedule;
 
 import java.util.Date;
 

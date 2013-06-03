@@ -1,4 +1,4 @@
-package com.example.myTimeTable;
+package eu.lucidcode.myBusSchedule;
 
 import java.io.InputStream;
 import java.text.ParseException;
@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import com.example.myTimeTable.R;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
