@@ -14,13 +14,16 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
-import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import com.example.myTimeTable.R;
+import eu.lucidcode.myTimeTable.R;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
@@ -33,27 +36,61 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
-public class MyActivity extends Activity {
+public class TableFragment extends Fragment {
+
+    private final String from;
+    private final String to;
+
+    private View thisView;
+
+    public TableFragment(String from, String to) {
+        this.from = from;
+        this.to = to;
+    }
 
     private final SimpleDateFormat displayFormat = new SimpleDateFormat("HH:mm");
 
     private final SimpleDateFormat parseFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
-    /**
-     * Called when the activity is first created.
-     */
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        new CurrentConnectionsService().execute();
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        new CurrentConnectionsService(from, to).execute();
+        thisView = inflater.inflate(R.layout.table, container, false);
+        fetchCurrentConnections();
+        return thisView;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        fetchCurrentConnections();
+    }
+
+    @Override
+    public void setMenuVisibility(boolean menuVisible) {
+        super.setMenuVisibility(menuVisible);
+        if (menuVisible) {
+            fetchCurrentConnections();
+        }
+    }
+
+    private void fetchCurrentConnections() {
+        new CurrentConnectionsService(from, to).execute();
     }
 
     private class CurrentConnectionsService extends AsyncTask<Void, Void, List<Connection>> {
 
+        private final String from;
+        private final String to;
+
+        private CurrentConnectionsService(String from, String to) {
+            this.from = from;
+            this.to = to;
+        }
+
         private final static String QUANDO_SERVICE_URL = "http://webservice.qando.at/2.0/webservice.ft";
 
-        protected String getXMLCommand(String from, String to, Calendar time) {
+        protected String getXMLCommand(Calendar time) {
             return "<?xml version=\"1.0\" encoding=\"UTF-8\"?> \n" +
                     "<ft> \n" +
                     "    <request clientId=\"123\" apiName=\"api_get_route\" apiVersion=\"2.0\"> \n" +
@@ -65,7 +102,7 @@ public class MyActivity extends Activity {
                     "        <to>" + to + "</to> \n" +
                     "        <toType>stop</toType> \n" +
                     "        <year>" + time.get(Calendar.YEAR) + "</year> \n" +
-                    "        <month>" + time.get(Calendar.MONTH) + "</month> \n" +
+                    "        <month>" + (time.get(Calendar.MONTH) + 1) + "</month> \n" +
                     "        <day>" + time.get(Calendar.DAY_OF_MONTH) + "</day> \n" +
                     "        <hour>" + time.get(Calendar.HOUR_OF_DAY) + "</hour> \n" +
                     "        <minute>" + time.get(Calendar.MINUTE) + "</minute> \n" +
@@ -83,7 +120,7 @@ public class MyActivity extends Activity {
             HttpContext localContext = new BasicHttpContext();
             try {
                 HttpPost post = new HttpPost(QUANDO_SERVICE_URL);
-                post.setEntity(new StringEntity(getXMLCommand("60200355", "60200560", new GregorianCalendar()), "UTF-8"));
+                post.setEntity(new StringEntity(getXMLCommand(new GregorianCalendar()), "UTF-8"));
                 HttpResponse response = httpClient.execute(post, localContext);
                 return parseConnections(response.getEntity().getContent());
             } catch (Throwable t) {
@@ -94,23 +131,23 @@ public class MyActivity extends Activity {
 
         @Override
         protected void onPostExecute(List<Connection> connections) {
-            TableLayout tableLayout = (TableLayout) findViewById(R.id.tab);
+            TableLayout tableLayout = (TableLayout) thisView;
             tableLayout.setStretchAllColumns(true);
             tableLayout.removeAllViews();
             for (Connection c : connections) {
-                TableRow row = new TableRow(getApplicationContext());
+                TableRow row = new TableRow(getActivity().getApplicationContext());
 
-                TextView vehicle = new TextView(getApplicationContext());
+                TextView vehicle = new TextView(getActivity().getApplicationContext());
                 vehicle.setText(c.vehicle);
                 row.addView(vehicle, 0);
 
-                TextView start = new TextView(getApplicationContext());
-                start.setText(displayFormat.format(c.start));
-                row.addView(start, 1);
+                TextView in = new TextView(getActivity().getApplicationContext());
+                in.setText(c.getDepartureMinutes().toString());
+                row.addView(in, 1);
 
-                TextView end = new TextView(getApplicationContext());
-                end.setText(displayFormat.format(c.end));
-                row.addView(end, 2);
+                TextView start = new TextView(getActivity().getApplicationContext());
+                start.setText(displayFormat.format(c.start));
+                row.addView(start, 2);
 
                 tableLayout.addView(row);
             }
